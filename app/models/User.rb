@@ -12,7 +12,6 @@ class User
 		@wins = 0
 		@losses = 0
 		@@all << self
-		@@all_names << name.downcase
 	end
 
 	def self.find_or_create_by_name(name)
@@ -29,10 +28,6 @@ class User
 
 	def self.all
 		@@all
-	end
-
-	def self.all_names
-		@@all_names
 	end
 
 	def add_loss

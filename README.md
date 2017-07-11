@@ -1,23 +1,32 @@
-Game starts
-	User class instance is created with 0 wins and 0 losses
-	Prompted for name
-		name assigned to user.name
-	Answer word is selected from possible words
-	 	Prints "___  " times Answer word.length
-		Puts "You have Game.guesses_remaining guesses left"
-		Puts "Guess a letter"
-	User inputs character guess
-		Game loops through every letter of answer word to see if match
-			if match fill in correct letters
-				update answer hash
-				display new "___" showing all correct letters
-				gueses remaining unchanged
-			if no matches
-				display new "___" unchanged results
-				guesses remaining -1
-			check if game over
-				if all sum hash.values = answer.length 
-					user win +1
-				if guesses remaining < 0 
-					user loss +1
-			reprompt for another guess if game not over
+# Hangman CLI
+===
+Basic Hangman command line interface game built in Ruby by Sho Miyata and Ben Coleman
+
+## How To Play
+---
+1. Clone this repository.
+2. Within your terminal run the `run.rb` file within the bin directory
+3. Enter name
+4. Choose multiplayer or single player with `1` or `2`
+5. You have 7 incorrect guesses to find the word
+
+## Making Edits
+---
+1. Fork and clone the repository
+2. Edit code locally
+3. `git add .`
+4. `git push`
+5. Submit a pull request
+
+## Features
+---
+* Recorded wins/loss
+* Multiplayer mode where one player chooses the word and the other is the guesser
+
+Coming Later
+* Difficulty levels
+* Game history within multiplayer
+* Improved UI
+
+
+Credit to: http://hangman.ascii.uk/ for the ASCII art

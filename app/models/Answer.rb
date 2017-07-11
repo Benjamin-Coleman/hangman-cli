@@ -17,6 +17,12 @@ class Answer
 			potential_words
 	end
 
+	def hard_wordbank
+		potential_words = ["ailurophile", "assemblage", "beleaguer", "brood", "bucolic", "bungalow", "chatoyant", "comely", "conflate", "cynosure", "dalliance", "demesne", "denouement", "desultory", "diaphanous", "dissemble", "dulcet", "ebullience", "effervescent", "elision", "elixir", "embrocation", "ethereal", "evocative", "felicity", "fugacious", "gambol", "halcyon", "imbrication", "incipient", "inglenook", "labyrinthine", "languor", "lilt", "lissome", "mellifluous", "murmurous", 
+			"onomatopoeia", "palimpsest", "penumbra", "plethora", "propinquity", "pyrrhic", "ratatouille", "redolent", "scintilla", "sumptuous", "surreptitious", "talisman", "talisman"]
+		potential_words
+	end
+
 	def select_word
 		wordbank.sample
 	end
